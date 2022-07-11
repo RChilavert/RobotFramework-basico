@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201227 10:21:51.267" rpa="false">
+<suite id="s1" name="Listbox" source="C:\Users\Tec\Documents\Programacion\RobotFramework basico\Listbox\Listbox.robot">
+<test id="s1-t1" name="Usando List Box">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${pagina}</arg>
+<arg>${navegador}</arg>
+</arguments>
+<msg timestamp="20201227 10:21:51.478" level="INFO">Opening browser 'Chrome' to base url 'https://www.htmlquick.com/es/reference/tags/select.html'.</msg>
+<status status="PASS" starttime="20201227 10:21:51.478" endtime="20201227 10:21:55.947"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20201227 10:22:00.949" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201227 10:21:55.947" endtime="20201227 10:22:00.949"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>deporte</arg>
+<arg>Tenis</arg>
+</arguments>
+<msg timestamp="20201227 10:22:00.949" level="INFO">Selecting options from selection list 'deporte' by label Tenis.</msg>
+<status status="PASS" starttime="20201227 10:22:00.949" endtime="20201227 10:22:01.045"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20201227 10:22:04.046" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201227 10:22:01.045" endtime="20201227 10:22:04.046"></status>
+</kw>
+<status status="PASS" starttime="20201227 10:21:51.477" endtime="20201227 10:22:04.046" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201227 10:21:51.268" endtime="20201227 10:22:04.047"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Listbox">Listbox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

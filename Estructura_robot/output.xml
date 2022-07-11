@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201219 11:50:10.816" rpa="false">
+<suite id="s1" name="Estructura" source="C:\Users\Tec\Desktop\estructura_robot\estructura.robot">
+<test id="s1-t1" name="Buscar Nintendo en google">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.google.com/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20201219 11:50:10.986" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20201219 11:50:10.986" endtime="20201219 11:50:15.466"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:q</arg>
+<arg>Nintendo</arg>
+</arguments>
+<msg timestamp="20201219 11:50:15.466" level="INFO">Typing text 'Nintendo' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20201219 11:50:15.466" endtime="20201219 11:50:15.558"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20201219 11:50:18.560" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201219 11:50:15.558" endtime="20201219 11:50:18.560"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>name:q</arg>
+<arg>\\13</arg>
+</arguments>
+<msg timestamp="20201219 11:50:18.560" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20201219 11:50:18.560" endtime="20201219 11:50:19.442"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20201219 11:50:22.443" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201219 11:50:19.442" endtime="20201219 11:50:22.443"></status>
+</kw>
+<kw name="close.browser">
+<msg timestamp="20201219 11:50:22.445" level="FAIL">No keyword with name 'close.browser' found.</msg>
+<status status="FAIL" starttime="20201219 11:50:22.445" endtime="20201219 11:50:22.445"></status>
+</kw>
+<status status="FAIL" starttime="20201219 11:50:10.986" endtime="20201219 11:50:22.445" critical="yes">No keyword with name 'close.browser' found.</status>
+</test>
+<status status="FAIL" starttime="20201219 11:50:10.817" endtime="20201219 11:50:22.446"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Estructura">Estructura</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20201219 11:50:18.560" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+</errors>
+</robot>
